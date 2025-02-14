@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программа для планирования тренировок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Программа для планирования тренировок</h1>
+    <p>Этот сайт сделал Jasur77</p>
+
+    <div>
+        <label for="pmValue">Введите ПМ:</label>
+        <input type="number" id="pmValue" placeholder="ПМ (кг)">
+    </div>
+    <div>
+        <label for="trainingFrequency">Частота тренировок в неделю:</label>
+        <select id="trainingFrequency">
+            <option value="1">1 тренировка</option>
+            <option value="2">2 тренировки</option>
+            <option value="3">3 тренировки</option>
+            <option value="4">4 тренировки</option>
+        </select>
+    </div>
+
+    <button id="updateBtn">Обновить таблицу</button>
+    <button id="downloadBtn">Скачать CSV</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Неделя</th>
+                <th>Тренировка</th>
+                <th>ПМ (%)</th>
+                <th>Подходы</th>
+                <th>Повторения</th>
+                <th>Кг</th>
+                <th>Объем</th>
+                <th>Суммарные повторения</th>
+            </tr>
+        </thead>
+        <tbody id="trainingTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
